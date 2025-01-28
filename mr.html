@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Technologies</title>
+  <link rel="stylesheet" href="stylemr.css">
+</head>
+<body>
+  <section class="main">
+    <div class="nav">
+      <div class="logo">
+        <img src="images/MR.png">
+        <a class="tech">Technologies</a>
+      </div>
+      <ul>
+        <li class="hide"><a href="#" class="hides">Home</a></li>
+        <li class="hide"><a href="#" class="hides">All Courses</a></li>
+        <li class="hide"><a href="#" class="hides">Price</a></li>
+        <li class="hide"><a href="#" class="hides">About Us</a></li>
+        <li onclick="showside()" ><a href="#" class="hides"><img src="images/menu.png" class="menuopen"></a></li>
+      </ul>
+      <ul class="sidenav" id="sidenav">
+        <li onclick="closeside()" class="image"><a href="#"><img src="images/close.png" class="image"></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">All Courses</a></li>
+        <li><a href="#">Price</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div class="contentdiv" id="contentdiv">
+      <div class="content-text anim">
+        <h3>WELCOME TO MR TECH</h2>
+        <h4>Best Education Expertise<br> for You</h4>
+        <p>Your next big ideas will start here and ideal to learn how to enter into all<br class="break"> domains.We are Empowered to help Technology thrieves.</p>
+        <a href="#" class="btn">GET STARTED NOW</a>
+      </div>
+    </div>
+  </section>
+  <section class="course">
+    <div class="coursecontent">
+    <div class="leftcourse">
+      <img src="images/study2.png" class="leftimg">
+    </div>
+    <div class="rightcourse">
+      <h1>LEARN EVERYTHING ABOUT TECHNOLOGIES</h1>
+      <h3>Benefits of Learning<br> our courses</h3>
+      <div class="benefits">
+        <img src="images/book.png" class="book">
+        <div class="benefitone">
+        <h2>Online Courses</h2>
+        <p>We provide you courses through the online which helps you to reduce the travel distance and learn everything via online.</p>
+      </div>
+      </div>
+      <div class="benefits">
+        <img src="images/cerficate.png" class="book">
+        <div class="benefitone">
+        <h2>Earn A Cerficate</h2>
+        <p>We provide you a Cerficate by end of the course which helps you in campus interview and we provide you the intership cerficate.</p>
+      </div>
+      </div>
+      <div class="benefits">
+        <img src="images/expert.png" class="book">
+        <div class="benefitone">
+        <h2>Learn with Expert</h2>
+        <p>You can learn the courses with our best experts and it will be helpful to improve your Knowledge in every aspects.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <script>
+    function showside(){
+      var sidenav=document.querySelector('.sidenav')
+      sidenav.style.right="0%";
+    }
+    function closeside(){
+      var close=document.querySelector('.sidenav')
+      close.style.right="-100%";
+    }
+  </script>
+</body>
+</html>
